@@ -11,35 +11,35 @@
     --secondary-gradient: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
     --purple-gradient: linear-gradient(135deg, #A770EF 0%, #CF8BF3 100%);
     --pink-gradient: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);
-    
+
     --bg-dark: #0A0E27;
     --bg-darker: #060913;
     --bg-card: rgba(255, 255, 255, 0.03);
     --bg-card-hover: rgba(255, 255, 255, 0.06);
-    
+
     --text-primary: #FFFFFF;
     --text-secondary: rgba(255, 255, 255, 0.7);
     --text-tertiary: rgba(255, 255, 255, 0.5);
-    
+
     --accent-red: #FF6B6B;
     --accent-yellow: #FFD93D;
     --accent-teal: #4ECDC4;
     --accent-purple: #A770EF;
-    
+
     /* Spacing */
     --container-width: 1280px;
     --section-padding: 120px;
-    
+
     /* Typography */
     --font-primary: 'Outfit', sans-serif;
     --font-secondary: 'Inter', sans-serif;
-    
+
     /* Effects */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
     --shadow-glow: 0 0 40px rgba(255, 107, 107, 0.3);
-    
+
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
@@ -178,8 +178,8 @@ body {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(78, 205, 196, 0.15) 0%, transparent 50%),
-                var(--bg-dark);
+        radial-gradient(circle at 80% 80%, rgba(78, 205, 196, 0.15) 0%, transparent 50%),
+        var(--bg-dark);
 }
 
 .animated-shapes {
@@ -224,12 +224,16 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
     }
+
     33% {
         transform: translate(50px, -50px) scale(1.1);
     }
+
     66% {
         transform: translate(-30px, 30px) scale(0.9);
     }
@@ -366,7 +370,7 @@ body {
     background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
+    border-radius: 50px;
     padding: 40px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     transition: all var(--transition-slow);
@@ -379,9 +383,12 @@ body {
 }
 
 @keyframes ticketFloat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -391,7 +398,7 @@ body {
     position: absolute;
     inset: -2px;
     background: var(--primary-gradient);
-    border-radius: 24px;
+    border-radius: 50px;
     opacity: 0;
     filter: blur(20px);
     transition: opacity var(--transition-slow);
@@ -464,13 +471,11 @@ body {
     left: 0;
     right: 0;
     height: 20px;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 10px,
-        var(--bg-dark) 10px,
-        var(--bg-dark) 20px
-    );
+    background: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 10px,
+            var(--bg-dark) 10px,
+            var(--bg-dark) 20px);
 }
 
 @keyframes fadeInUp {
@@ -478,6 +483,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -489,6 +495,7 @@ body {
         opacity: 0;
         transform: translateX(30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -656,9 +663,12 @@ body {
 }
 
 @keyframes iconPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
@@ -898,15 +908,15 @@ body {
         grid-template-columns: 1fr;
         gap: 60px;
     }
-    
+
     .hero-title {
         font-size: 56px;
     }
-    
+
     .section-title {
         font-size: 48px;
     }
-    
+
     .pricing-card.featured {
         transform: scale(1);
     }
@@ -916,43 +926,43 @@ body {
     .nav-links {
         display: none;
     }
-    
+
     .hero-title {
         font-size: 42px;
     }
-    
+
     .hero-cta {
         flex-direction: column;
     }
-    
+
     .hero-stats {
         gap: 20px;
     }
-    
+
     .stat-number {
         font-size: 28px;
     }
-    
+
     .section-title {
         font-size: 36px;
     }
-    
+
     .movies-grid,
     .experiences-grid,
     .pricing-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
         gap: 32px;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         gap: 24px;
