@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book premium cinema tickets online. Experience movies like never before with luxury seating, cutting-edge sound, and immersive visuals.">
+    <title>CineMax - Premium Cinema Ticket Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M20 0L24.5 15.5H40L28 25L32.5 40L20 30L7.5 40L12 25L0 15.5H15.5L20 0Z" fill="url(#logo-gradient)"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#FF6B6B"/>
+                            <stop offset="100%" stop-color="#FFD93D"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>CineMax</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#movies" class="nav-link">Now Showing</a></li>
+                <li><a href="#experiences" class="nav-link">Experiences</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+            <button class="btn-primary" id="sign-in-btn">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Experience Cinema</span>
+                    <span class="title-line gradient-text">Like Never Before</span>
+                </h1>
+                <p class="hero-description">
+                    Immerse yourself in the magic of movies with premium seating, 
+                    cutting-edge Dolby Atmos sound, and crystal-clear 4K projection.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn-hero" id="book-now-btn">
+                        <span>Book Tickets Now</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn-secondary" id="explore-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm-1 14.5v-9l6 4.5-6 4.5z"/>
+                        </svg>
+                        <span>Watch Trailer</span>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Screens</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ticket-card">
+                    <div class="ticket-glow"></div>
+                    <div class="ticket-content">
+                        <div class="ticket-header">
+                            <span class="ticket-badge">Premium</span>
+                            <span class="ticket-price">$15.99</span>
+                        </div>
+                        <h3 class="ticket-movie">The Stellar Journey</h3>
+                        <div class="ticket-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm1 12H7V7h2v5zm0-6H7V4h2v2z"/>
+                                </svg>
+                                <span>Screen 5</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.5 9H8V4h1.5v3.5H11.5V9z"/>
+                                </svg>
+                                <span>7:30 PM</span>
+                            </div>
+                        </div>
+                        <div class="ticket-seats">
+                            <span>Seats: A12, A13</span>
+                        </div>
+                    </div>
+                    <div class="ticket-tear"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Now Showing Section -->
+    <section class="movies-section" id="movies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Now Showing</h2>
+                <p class="section-subtitle">Discover the latest blockbusters and exclusive premieres</p>
+            </div>
+            <div class="movies-grid" id="movies-grid">
+                <!-- Movie cards will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences-section" id="experiences">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Experiences</h2>
+                <p class="section-subtitle">Elevate your movie experience with our cutting-edge technology</p>
+            </div>
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="url(#icon-gradient-1)" stroke-width="2"/>
+                            <path d="M24 14v20M14 24h20" stroke="url(#icon-gradient-1)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-1" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#FF6B6B"/>
+                                    <stop offset="100%" stop-color="#FFD93D"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="experience-title">IMAX</h3>
+                    <p class="experience-description">Experience movies on massive screens with crystal-clear imagery and immersive sound that puts you in the center of the action.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="2" stroke="url(#icon-gradient-2)" stroke-width="2"/>
+                            <path d="M16 20l8 4-8 4v-8z" fill="url(#icon-gradient-2)"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-2" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#4ECDC4"/>
+                                    <stop offset="100%" stop-color="#44A08D"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="experience-title">Dolby Atmos</h3>
+                    <p class="experience-description">Feel every moment with multidimensional sound that flows all around you with breathtaking realism.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M12 18l12-6 12 6v12l-12 6-12-6V18z" stroke="url(#icon-gradient-3)" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M12 18l12 6m0 0l12-6m-12 6v12" stroke="url(#icon-gradient-3)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-3" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#A770EF"/>
+                                    <stop offset="100%" stop-color="#CF8BF3"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="experience-title">4DX</h3>
+                    <p class="experience-description">Feel the movie with motion seats, environmental effects, and sensory experiences that bring films to life.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="18" cy="24" r="6" stroke="url(#icon-gradient-4)" stroke-width="2"/>
+                            <circle cx="30" cy="24" r="6" stroke="url(#icon-gradient-4)" stroke-width="2"/>
+                            <path d="M12 24h24" stroke="url(#icon-gradient-4)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-4" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#F093FB"/>
+                                    <stop offset="100%" stop-color="#F5576C"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="experience-title">VIP Lounge</h3>
+                    <p class="experience-description">Luxury recliner seats, gourmet food service, and exclusive lounge access for the ultimate comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Experience</h2>
+                <p class="section-subtitle">Flexible pricing for every movie lover</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Standard</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">12</span>
+                            <span class="price-period">/ticket</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Standard seating</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Digital projection</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Surround sound</span>
+                        </li>
+                    </ul>
+                    <button class="btn-pricing">Select</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Premium</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">18</span>
+                            <span class="price-period">/ticket</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Recliner seating</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>4K laser projection</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Dolby Atmos sound</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Reserved seating</span>
+                        </li>
+                    </ul>
+                    <button class="btn-pricing">Select</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">VIP</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">28</span>
+                            <span class="price-period">/ticket</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Luxury recliners</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>IMAX experience</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Gourmet food service</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Private lounge access</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#4ECDC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Complimentary drinks</span>
+                        </li>
+                    </ul>
+                    <button class="btn-pricing">Select</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 0L24.5 15.5H40L28 25L32.5 40L20 30L7.5 40L12 25L0 15.5H15.5L20 0Z" fill="url(#footer-logo-gradient)"/>
+                            <defs>
+                                <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#FF6B6B"/>
+                                    <stop offset="100%" stop-color="#FFD93D"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>CineMax</span>
+                    </div>
+                    <p class="footer-tagline">Experience cinema like never before</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#press">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#help">Help Center</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                            <li><a href="#cookies">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CineMax. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#facebook" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#twitter" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#instagram" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
